@@ -1,7 +1,6 @@
 /*
 
  This is the firmware for the server end (the gun) of the Target Practice Game
- When the trigger is pressed, a IR pulse is sent and a timer is triggered.
  When the target sends a signal to stop the squirt, the squirt timer resets.
 */
 
@@ -9,14 +8,19 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
 #include <WiFiClient.h>
+#include "WIFI_CREDS.h"
 
 const char* ssid = STASSID;
 const char* password = STAPSK;
+const int squirtTimerDurationMS = 10000;
+
+long squirtTimerStart;
+bool squirtTimerActive;
 
 // TCP server at port 80 will respond to HTTP requests
 WiFiServer server(80);
 
-void setup(void) {
+void setup() {
   Serial.begin(115200);
 
   // Connect to WiFi network
@@ -40,7 +44,7 @@ void setup(void) {
   //   the fully-qualified domain name is "esp8266.local"
   // - second argument is the IP address to advertise
   //   we send our IP address on the WiFi network
-  if (!MDNS.begin("esp8266")) {
+  if (!MDNS.begin("missandmist")) {
     Serial.println("Error setting up MDNS responder!");
     while (1) { delay(1000); }
   }
@@ -54,8 +58,17 @@ void setup(void) {
   MDNS.addService("http", "tcp", 80);
 }
 
-void loop(void) {
+void loop() {
+  servershit();
+  if (squirtTimerActive and millis() - squirtTimerStart > squirtTimerDurationMS) {
+    squirtTimerActive = false;
+    Serial.println("womp wommp get fucked");
+  } else if (squirtTimerActive) {
+    Serial.println(millis() - squirtTimerStart);
+  }
+}
 
+void servershit() {
   MDNS.update();
 
   // Check if a client has connected
@@ -87,14 +100,18 @@ void loop(void) {
   String s;
   if (req == "/") {
     IPAddress ip = WiFi.localIP();
-    String ipStr = String(ip[0]) + '.' + String(ip[1]) + '.' + String(ip[2]) + '.' + String(ip[3]);
-    s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>Hello from ESP8266 at ";
-    s += ipStr;
-    s += "</html>\r\n\r\n";
-    Serial.println("Sending 200");
-  } else if (req == "/meow") {
-    s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>mewomwomeowmeoeome MYAA</html>\r\n\r\n";
-    Serial.println("Sending 200");
+    s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>sybau</html>\r\n\r\n";
+    if (squirtTimerActive) {
+      squirtTimerActive = false;
+      Serial.println("Timer STOPPED!");
+    }
+  } else if (req == "/timer") {
+      s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>TIME STARTED GO GO GO!</html>\r\n\r\n";
+      if (not squirtTimerActive) {
+        squirtTimerActive = true;
+        squirtTimerStart = millis();
+        Serial.println("Timer Started!"); 
+      }
   } else {
     s = "HTTP/1.1 404 Not Found\r\n\r\n";
     Serial.println("Sending 404");
