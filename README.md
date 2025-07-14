@@ -16,4 +16,4 @@ Also, we spent a few hours CADing but unfortunately couldn't end up printing our
 - 1x 5.7kΩ resistor
 - 1x Servo
 
-Demo at: 
+Demo at: https://youtu.be/QnDSIx5gIkU

@@ -1,0 +1,14 @@
+XIAO:
+D0: Photoresistor + 7.5k resistor.
+D6: Servo Motor (-)
+GND: 7.5k Resistor
+5V: Photoresistor, Servo (+)
+
+Photoresistor:
+A: 5V 
+B: A0, 7.5k Resistor
+
+7.5k Resistor:
+A: A0, Photoresistor
+B: GND
+
