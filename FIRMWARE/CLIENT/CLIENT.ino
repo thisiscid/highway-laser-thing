@@ -1,26 +1,28 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-const char* ssid = "your-SSID";
-const char* password = "your-PASSWORD";
+const char* ssid = "estrogen";
+// const char* password = "octocat11";
 
 void waitForserver() {
   HTTPClient http;
 
   while (true) {
     if (WiFi.status() == WL_CONNECTED) {
-      http.begin("");
+      Serial.print("Connected to ");
+      Serial.println(ssid)
+      // http.begin("");
 
-      int httpCode = http.GET();
-      if (httpCode > 0) {
-        Serial.printf("example.com is online! HTTP code: %d\n", httpCode);
-        http.end();
-        break; // meow~ we can exit setup now, it's online owo
-      } else {
-        Serial.printf("Failed to reach example.com: %s\n", http.errorToString(httpCode).c_str());
-      }
+      // // int httpCode = http.GET();
+      // // if (httpCode > 0) {
+      // //   Serial.printf("example.com is online! HTTP code: %d\n", httpCode);
+      // //   http.end();
+      // //   break; // meow~ we can exit setup now, it's online owo
+      // // } else {
+      // //   Serial.printf("Failed to reach example.com: %s\n", http.errorToString(httpCode).c_str());
+      // // }
 
-      http.end();
+      // http.end();
     } else {
       Serial.println("WiFi not connected... trying again nya~");
     }
@@ -33,7 +35,7 @@ void setup() {
   Serial.begin(115200);
   delay(1000);
 
-  WiFi.begin(ssid, password);
+  WiFi.begin(ssid);
   Serial.print("Connecting to WiFi");
 
   while (WiFi.status() != WL_CONNECTED) {
