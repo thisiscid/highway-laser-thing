@@ -72,9 +72,6 @@ void setup() {
 void loop() {
   Serial.println(analogRead(A0));
   delay(500);
-  // if (analogRead(A0) > 1020) {
-    
-  // }
   // servershit();
   // if (squirtTimerActive and millis() - squirtTimerStart > squirtTimerDurationMS) {
   //   squirtTimerActive = false;

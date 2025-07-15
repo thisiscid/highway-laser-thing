@@ -17,3 +17,11 @@ Also, we spent a few hours CADing but unfortunately couldn't end up printing our
 - 1x Servo
 
 Demo at: https://youtu.be/QnDSIx5gIkU
+
+# Images
+
+its a version that didn't work but we forgot to take pictures at undercity so oops </3
+![project like day before we shipped](https://hc-cdn.hel1.your-objectstorage.com/s/v3/4b6192a1f97a28bb54e7fc021231fc2d6375693d_img_5086_2.jpeg)
+![ooo project on a small breadboard](https://hc-cdn.hel1.your-objectstorage.com/s/v3/35242fbe0e5f13b1689ea3f96c5c1c3dea2d81ea_img_5089_2_2.jpeg)
+![our planned case]
+
