@@ -7,6 +7,11 @@ During the making, it was usually just bad luck (IR having multiple standards, e
 
 Also, we spent a few hours CADing but unfortunately couldn't end up printing our stuff up bcs the print queue was too long :c
 
+We did end up going to a makerspace to 3D print that water pump but, ultimately, it never worked because we couldn't attach the motor shaft to the propellor.
+
+## CAD
+The entire CAD workspace can be found [here](https://cad.onshape.com/documents/c8bd0844e7af04cbbd1640c4/w/b72edb9be8931f6878e483f0/e/558afbc4dfd74e2ea734dcd1?renderMode=0&uiState=6877122c7e3a7a28c8514dfe)
+
 # BOM
 - 1x Seeed Xiao RP2040
 - 3x Jumpers/Wires
