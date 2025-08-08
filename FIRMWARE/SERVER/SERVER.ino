@@ -21,10 +21,13 @@
 // WiFiServer server(80);
 
 void setup() {
-  Serial.begin(115200);
-  pinMode(A0, INPUT);
-  Serial.println("Setting up");
-
+  Serial.begin(74880);
+  // configure ADC for 12-bit readings (0–4095)
+  //analogReadResolution(12);
+  // set the attenuation so 0–3.3 V maps to 0–4095
+  //analogSetPinAttenuation(A0, ADC_11db);
+  Serial.println("\nCompleted setup!");
+}
   // Connect to WiFi network
   // WiFi.mode(WIFI_STA);
   // WiFi.begin(ssid, password);
@@ -67,11 +70,13 @@ void setup() {
   // // Add service to MDNS-SD
   // MDNS.addService("http", "tcp", 80);
   // MDNS IS NOT NECESSARY with AP at least
-}
+
 
 void loop() {
-  Serial.println(analogRead(A0));
+  int raw = analogRead(A0);    // A0 is GPIO36 on the ESP32 Thing
+  Serial.println("Hello!");
   delay(500);
+}
   // servershit();
   // if (squirtTimerActive and millis() - squirtTimerStart > squirtTimerDurationMS) {
   //   squirtTimerActive = false;
@@ -79,7 +84,7 @@ void loop() {
   // } else if (squirtTimerActive) {
   //   Serial.println(millis() - squirtTimerStart);
   // }
-}
+
 
 // void servershit() {
 //   // MDNS.update();
