@@ -29,9 +29,7 @@ The pump we used can be found [here](https://www.thingiverse.com/thing:3113040)!
 
 ### The Demo
 
-[![](https://img.youtube.com/vi/0n558H3vsUA/maxresdefault.jpg)](https://youtu.be/0n558H3vsUA)
-
-[Click me](https://youtu.be/0n558H3vsUA)
+[Click me](https://www.youtube.com/shorts/C0JlXzaKqY4?feature=share)
 
 ### Previous Demos
 
@@ -39,11 +37,11 @@ The pump we used can be found [here](https://www.thingiverse.com/thing:3113040)!
 
 [Second demo](https://youtu.be/-ZU2ueJ4mZA)
 
-[Third Demo](https://www.youtube.com/shorts/C0JlXzaKqY4?feature=share)
+[third demo](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f9b8eb7a7bb31e5a10f09f8dbe7f0de1c5c3fb9f_image.png)
 
 ## Wiring diagram
 
-![wiring diagram](https://hc-cdn.hel1.your-objectstorage.com/s/v3/7788faa18d12a5dac439f4c30ccfe36f595c2ad4_screenshot_2025-08-07_at_10.45.12___pm.png)
+![wiring diagram](https://hc-cdn.hel1.your-objectstorage.com/s/v3/c1f86c67e3de94117ed607a4df1af7b4be607b5f_screenshot_2025-08-08_at_12.11.58___am.png)
 
 ## Images
 
@@ -52,3 +50,7 @@ The pump we used can be found [here](https://www.thingiverse.com/thing:3113040)!
 ![ooo project on a small breadboard](https://hc-cdn.hel1.your-objectstorage.com/s/v3/57888bc8dcf9b65643ba7c824badabcd9320ceb3_small-breadboard-min.jpg)
 
 ![side view!](https://hc-cdn.hel1.your-objectstorage.com/s/v3/c382a907fe635e7de046fa985e5da0242f1c2cac_img_5320.jpg)
+
+![overall view](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f4cc39ef362a25fe3e64fcf00484c44ca4d44289_img_5349.jpg)
+
+![breadboard only](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2f6ecd4cf0829a37d6d2b9e9e6415d4026c52385_img_5348.jpg)
