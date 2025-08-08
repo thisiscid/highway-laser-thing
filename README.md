@@ -31,6 +31,8 @@ The pump we used can be found [here](https://www.thingiverse.com/thing:3113040)!
 
 [![](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f9b8eb7a7bb31e5a10f09f8dbe7f0de1c5c3fb9f_image.png)](https://www.youtube.com/shorts/C0JlXzaKqY4?feature=share)
 
+[Click me](https://www.youtube.com/shorts/C0JlXzaKqY4?feature=share)
+
 ### Previous Demos
 
 [Undercity demo](https://youtu.be/QnDSIx5gIkU)
