@@ -1,4 +1,4 @@
-# Miss and Mist (more like hit and mist)
+# Miss and Mist
 Names: Niko (or rainger or cid), Kayla, Shayaan
 
 Pretty much: you start a timer, you try to hit the target. You miss, and then you get hit with water. The project itself requires a photocell, DC motor, and a few other bits and pieces to get it up and running. We also used a laser pointer as a targeting solution for the player, you could technically use a really targeted flashlight as well but laser pointer recommended!
@@ -38,6 +38,9 @@ The pump we used can be found [here](https://www.thingiverse.com/thing:3113040)!
 [Second demo](https://youtu.be/-ZU2ueJ4mZA)
 
 ## Wiring diagram
+=======
+Undercity demo at: https://youtu.be/QnDSIx5gIkU
+Second demo at: https://youtube.com/shorts/C0JlXzaKqY4 (WATCH THIS ONE!)
 
 ![wiring diagram](https://hc-cdn.hel1.your-objectstorage.com/s/v3/7788faa18d12a5dac439f4c30ccfe36f595c2ad4_screenshot_2025-08-07_at_10.45.12___pm.png)
 
