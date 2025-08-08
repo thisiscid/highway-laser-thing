@@ -38,9 +38,6 @@ The pump we used can be found [here](https://www.thingiverse.com/thing:3113040)!
 [Second demo](https://youtu.be/-ZU2ueJ4mZA)
 
 ## Wiring diagram
-=======
-Undercity demo at: https://youtu.be/QnDSIx5gIkU
-Second demo at: https://youtube.com/shorts/C0JlXzaKqY4 (WATCH THIS ONE!)
 
 ![wiring diagram](https://hc-cdn.hel1.your-objectstorage.com/s/v3/7788faa18d12a5dac439f4c30ccfe36f595c2ad4_screenshot_2025-08-07_at_10.45.12___pm.png)
 
