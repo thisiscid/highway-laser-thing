@@ -1,4 +1,4 @@
-# Miss and Mist (more like hit and mist)
+# Miss and Mist
 Names: Niko (or rainger or cid), Kayla, Shayaan
 
 Pretty much: you start a timer, you try to hit the target. You miss, and then you get hit with water. The project itself requires a photocell, DC motor, and a few other bits and pieces to get it up and running. We also used a laser pointer as a targeting solution for the player, you could technically use a really targeted flashlight as well but laser pointer recommended!
